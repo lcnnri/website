@@ -1,0 +1,942 @@
+/* =========================================================
+QUARTO THEME
+Change the theme in _quarto.yml under: format > html > theme
+Available options (uncomment one, comment the rest):
+  lumen       ← current
+  cosmo
+  flatly
+  journal
+  litera
+  materia
+  minty
+  sandstone
+  simplex
+  spacelab
+  united
+  yeti
+========================================================= */
+
+
+/* =========================================================
+THEME VARIABLES
+To switch palette: uncomment one block below, comment the others.
+========================================================= */
+
+/* ---------------------------------------------------------
+   PALETTE A — Classic Blue (default)
+--------------------------------------------------------- */
+/*
+:root {
+  --text-main: #1a1a1a;
+  --text-muted: #555;
+  --border: #e0e0e0;
+
+  --accent: #4a90e2;
+  --accent-dark: #357abd;
+
+  --link: #0066cc;
+  --link-hover: #004080;
+
+  --surface-main: #ffffff;
+  --surface-soft: #fafafa;
+  --surface-soft-hover: #f5f5f5;
+  --surface-muted: #f8f9fa;
+  --surface-muted-hover: #e9ecef;
+
+  --featured-bg-1: #fff9e6;
+  --featured-bg-2: #fffef7;
+  --featured-accent: #f0ad4e;
+
+  --radius: 8px;
+  --radius-small: 6px;
+  --shadow-soft: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.08);
+  --transition-fast: 0.15s;
+  --transition: 0.25s;
+
+}
+*/
+
+/* ---------------------------------------------------------
+   PALETTE B — Slate Gray
+   Uncomment this block (and comment Palette A above) to activate.
+--------------------------------------------------------- */
+
+:root {
+  --text-main: #1a1a1a;
+  --text-muted: #666;
+  --border: #d8d8d8;
+
+  --accent: #555e6b;
+  --accent-dark: #363d47;
+
+  --link: #3d4551;
+  --link-hover: #1a1e24;
+
+  --surface-main: #ffffff;
+  --surface-soft: #f9f9f9;
+  --surface-soft-hover: #f2f2f2;
+  --surface-muted: #f4f5f6;
+  --surface-muted-hover: #e6e8ea;
+
+  --featured-bg-1: #f5f5f0;
+  --featured-bg-2: #fafaf8;
+  --featured-accent: #8a9099;
+
+  --radius: 8px;
+  --radius-small: 6px;
+  --shadow-soft: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.10);
+  --transition-fast: 0.15s;
+  --transition: 0.25s;
+}
+
+
+/* ---------------------------------------------------------
+   PALETTE C — Verde Petróleo
+   Uncomment this block (and comment Palette A above) to activate.
+--------------------------------------------------------- */
+/*
+:root {
+  --text-main: #1a1a1a;
+  --text-muted: #557070;
+  --border: #cfdede;
+
+  --accent: #2a7b7b;
+  --accent-dark: #1a5c5c;
+
+  --link: #1e6868;
+  --link-hover: #0d3d3d;
+
+  --surface-main: #ffffff;
+  --surface-soft: #f5fafa;
+  --surface-soft-hover: #eaf3f3;
+  --surface-muted: #f0f8f8;
+  --surface-muted-hover: #daeaea;
+
+  --featured-bg-1: #f0faf8;
+  --featured-bg-2: #f8fdfc;
+  --featured-accent: #3aada0;
+
+  --radius: 8px;
+  --radius-small: 6px;
+  --shadow-soft: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.09);
+  --transition-fast: 0.15s;
+  --transition: 0.25s;
+}
+*/
+/* ---------------------------------------------------------
+   PALETTE D — Forest Green
+   Uncomment this block (and comment Palette C above) to activate.
+--------------------------------------------------------- */
+/*
+:root {
+  --text-main: #1a1a1a;
+  --text-muted: #556;
+  --border: #d5ddd5;
+
+  --accent: #3d7a5e;
+  --accent-dark: #2a5c44;
+
+  --link: #2e6b4f;
+  --link-hover: #1a3d2d;
+
+  --surface-main: #ffffff;
+  --surface-soft: #f8faf8;
+  --surface-soft-hover: #f0f5f0;
+  --surface-muted: #f2f7f2;
+  --surface-muted-hover: #e3ede3;
+
+  --featured-bg-1: #f4faef;
+  --featured-bg-2: #fafdf7;
+  --featured-accent: #6aab82;
+
+  --radius: 8px;
+  --radius-small: 6px;
+  --shadow-soft: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.09);
+  --transition-fast: 0.15s;
+  --transition: 0.25s;
+}
+*/
+
+
+
+/* =========================================================
+PALETTE OVERRIDES
+Force the active palette onto our custom components.
+========================================================= */
+
+/* Navbar */
+.navbar {
+  background-color: var(--accent) !important;
+  border-bottom: none !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+}
+
+/* Body links (overrides lumen's hardcoded blue) */
+body a:not(.btn):not(.nav-link):not(.navbar-brand):not(.pub-pill) {
+  color: var(--link);
+}
+body a:not(.btn):not(.nav-link):not(.navbar-brand):not(.pub-pill):hover {
+  color: var(--link-hover);
+}
+
+/* Profile icons follow accent color */
+.profile-icons a {
+  color: var(--accent) !important;
+}
+
+
+/* =========================================================
+SECTION NAV
+========================================================= */
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-nav a {
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.section-nav a:hover {
+  background: var(--surface-soft-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* =========================================================
+RESEARCH PAGE
+========================================================= */
+
+.research-page h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--text-main);
+}
+
+
+/* =========================================================
+PAPER CARD
+========================================================= */
+
+.paper {
+
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+
+  background-color: var(--surface-soft);
+  border-radius: var(--radius);
+  border-left: 5px solid var(--accent);
+
+  transition:
+    background-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.paper:hover {
+
+  background-color: var(--surface-soft-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateX(3px);
+}
+
+.paper:last-child {
+  margin-bottom: 2rem;
+}
+
+
+/* Title */
+
+.paper > p:first-of-type {
+  margin-bottom: 0.8rem;
+}
+
+.paper p:first-of-type strong {
+
+  font-size: 1.25rem;
+  color: var(--text-main);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* Coauthors */
+
+.paper > p:nth-of-type(2) {
+
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+/* Journal */
+
+.paper > p:nth-of-type(3) {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.paper em {
+
+  color: #2c5282;
+  font-weight: 500;
+}
+
+
+/* Links */
+
+.paper > p:nth-of-type(4) {
+
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.paper a {
+
+  display: inline-block;
+
+  color: var(--link);
+  text-decoration: none;
+
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  border-bottom: 2px solid transparent;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.paper a:hover {
+
+  color: var(--link-hover);
+  border-bottom: 2px solid var(--link-hover);
+}
+
+
+/* =========================================================
+FEATURED PAPER
+========================================================= */
+
+.paper.highlight {
+
+  background: linear-gradient(
+    135deg,
+    var(--featured-bg-1),
+    var(--featured-bg-2)
+  );
+
+  border-left: 5px solid var(--featured-accent);
+  position: relative;
+}
+
+.paper.highlight::before {
+
+  content: "★ Featured";
+
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+
+  background-color: var(--featured-accent);
+  color: white;
+
+  padding: 0.3rem 0.8rem;
+
+  border-radius: 20px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+ABSTRACT
+========================================================= */
+
+.abstract {
+
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+
+  background-color: var(--surface-main);
+
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-small);
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+
+  text-align: justify;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.abstract::before {
+
+  content: "Abstract";
+  display: block;
+
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  color: var(--text-main);
+
+  font-size: 0.85rem;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+BIBTEX
+========================================================= */
+
+.bibtex {
+
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+
+  background-color: var(--surface-muted);
+
+  border-left: 4px solid #6c757d;
+  border-radius: var(--radius-small);
+
+  position: relative;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.bibtex::before {
+
+  content: "BibTeX Citation";
+  display: block;
+
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  color: var(--text-main);
+
+  font-size: 0.85rem;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bibtex pre {
+
+  background-color: white;
+
+  border: 1px solid var(--border);
+  border-radius: 4px;
+
+  padding: 1rem;
+  margin: 0;
+
+  font-size: 0.85rem;
+  font-family: Courier, monospace;
+
+  overflow-x: auto;
+}
+
+
+/* =========================================================
+COPY BIBTEX BUTTON
+========================================================= */
+
+.copy-bibtex {
+
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+
+  background-color: var(--accent);
+  color: white;
+
+  border: none;
+
+  padding: 0.4rem 1rem;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.copy-bibtex:hover {
+
+  background-color: var(--accent-dark);
+  transform: translateY(-1px);
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================================
+STATUS BADGE
+========================================================= */
+
+.paper .status-badge {
+
+  display: inline-block;
+
+  background-color: #e8f4f8;
+  color: #2c5282;
+
+  padding: 0.25rem 0.75rem;
+
+  border-radius: 12px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  margin-left: 0.5rem;
+}
+
+
+/* =========================================================
+PROFILE IMAGE
+========================================================= */
+
+img {
+
+  border-radius: 50%;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+img.profile-img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+img:hover {
+
+  transform: scale(1.02);
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+/* =========================================================
+HOMEPAGE
+========================================================= */
+
+.homepage h2 {
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 1.5rem;
+
+  padding-bottom: 0.8rem;
+
+  border-bottom: 3px solid var(--text-main);
+}
+
+
+/* =========================================================
+TEXT
+========================================================= */
+
+.g-col-md-8 p {
+
+  font-size: 1.15rem;
+  line-height: 1.8;
+
+  margin-bottom: 1.2rem;
+
+  color: #333;
+}
+
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.contact-section {
+
+  margin-top: 4rem;
+  padding-top: 2rem;
+
+  border-top: 2px solid var(--border);
+
+  font-size: 1.1rem;
+}
+
+.contact-section strong {
+  color: var(--text-main);
+}
+
+
+/* =========================================================
+CONTACT CARDS
+========================================================= */
+
+.contact-cards {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.contact-card {
+
+  display: block;
+
+  padding: 1rem 1.5rem;
+
+  background-color: var(--surface-muted);
+
+  border-left: 4px solid var(--link);
+
+  border-radius: var(--radius);
+
+  text-decoration: none !important;
+
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+
+  color: var(--text-main);
+}
+
+.contact-card:hover {
+
+  background-color: var(--surface-muted-hover);
+
+  border-left-color: var(--link-hover);
+
+  transform: translateX(5px);
+
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-card i {
+
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+
+  color: var(--link);
+}
+
+.contact-card strong {
+
+  display: block;
+  font-size: 1.1rem;
+
+  margin-bottom: 0.2rem;
+}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+.page-footer a {
+
+  color: #666;
+
+  font-size: 1.5rem;
+
+  margin-right: 1rem;
+
+  transition: color var(--transition-fast);
+}
+
+.page-footer a:hover {
+
+  color: var(--accent);
+}
+
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .paper {
+    padding: 1rem;
+  }
+
+  .paper.highlight::before {
+    position: static;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .abstract,
+  .bibtex {
+    padding: 1rem;
+  }
+
+  .copy-bibtex {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .g-col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  img.profile-img {
+    width: 40%;
+  }
+
+  .research-page h2,
+  .homepage h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+ICONS
+========================================================= */
+.profile-icons{
+  display:flex;
+  justify-content:center;
+  gap:0.8rem;
+  margin-top:0.75rem;
+  margin-bottom:0.25rem;
+  font-size:1.4rem;
+  line-height:1;
+}
+
+.profile-icons a{
+  text-decoration:none;
+}
+
+.profile-icons a:hover{
+  opacity:0.75;
+}
+
+.research-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+
+
+
+/* --- Papers --- */
+.paper { margin: 1.2rem 0; }
+
+/* Links row */
+.pub-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin:.55rem 0 .9rem 0;
+}
+
+/* One consistent pill style */
+.pub-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+
+  height: 2.0rem;
+  padding: 0 .75rem;
+
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.14);
+  background: transparent;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: .93rem;
+  line-height: 1;
+
+  cursor: pointer;
+  transition: transform .12s ease, background-color .12s ease, border-color .12s ease;
+}
+
+.pub-pill i{
+  font-size: 1.02rem;
+  opacity: .9;
+}
+
+/* hover */
+.pub-pill:hover{
+  background: rgba(0,0,0,.04);
+  border-color: rgba(0,0,0,.22);
+  transform: translateY(-1px);
+  text-decoration:none;
+}
+
+/* focus */
+.pub-pill:focus{
+  outline: none;
+  box-shadow: 0 0 0 .15rem rgba(13,110,253,.18);
+}
+
+/* buttons look like links */
+button.pub-pill{
+  font-family: inherit;
+}
+
+/* Abstract/BibTeX blocks */
+.abstract, .bibtex{
+  margin-top: .6rem;
+  padding: .9rem 1.05rem;
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 14px;
+  background: rgba(0,0,0,.02);
+}
+
+/* Copy button */
+.copy-bibtex{
+  border-radius: 999px;
+  padding: .25rem .6rem;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.03);
+  font-weight: 600;
+  cursor: pointer;
+}
+.copy-bibtex:hover{ filter: brightness(1.05); }
+
+/* Icon colors (optional, subtle) */
+.pub-pill .bi-file-pdf{ color:#b42318; }
+.pub-pill .bi-github{ color:#111; }
+
+.pub-links a.pub-pill{
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Make paper pills not inherit the generic .paper a link styling */
+.paper .pub-links a.pub-pill{
+  border-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: .93rem !important;
+  font-weight: 600 !important;
+}
+
+/* Kill any pseudo-elements from theme/link styles */
+.paper .pub-links .pub-pill::before,
+.paper .pub-links .pub-pill::after{
+  content: none !important;
+  display: none !important;
+}
+
+/* --- Normalize pill alignment (links + buttons + mixed icon fonts) --- */
+.pub-links{
+  display:flex !important;
+  flex-wrap:wrap;
+  gap:.5rem;
+  align-items:center;              /* key: align all pills on the same row baseline */
+}
+
+/* enforce identical box model for a and button */
+.pub-links .pub-pill{
+  display:inline-flex !important;
+  align-items:center !important;   /* key: center icon + text vertically */
+  justify-content:center;
+  height: 2.0rem;
+  padding: 0 .75rem;
+
+  line-height: 1 !important;       /* kill baseline differences */
+  vertical-align: middle !important;
+
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.14);
+  background: transparent;
+}
+
+/* remove UA button styles */
+.pub-links button.pub-pill{
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0,0,0,.14);
+  background: transparent;
+  margin: 0;                       /* kill default margins */
+}
+
+/* normalize icon sizing and vertical position across icon fonts */
+.pub-links .pub-pill i{
+  display:inline-block;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  transform: translateY(-0.5px);   /* tiny nudge; adjust to taste */
+}
+
+/* Academicons tend to sit low relative to Bootstrap */
+.pub-links .pub-pill i.ai{
+  transform: translateY(-1px);
+  font-size: 1.05rem;
+}
+
+.paper{
+  border-left: 4px solid var(--accent);
+}
