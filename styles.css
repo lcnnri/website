@@ -95,7 +95,7 @@ To switch palette: uncomment one block below, comment the others.
 /* ---------------------------------------------------------
    PALETTE C — Verde Petróleo
    Uncomment this block (and comment Palette A above) to activate.
---------------------------------------------------------- */
+----------------------------------g----------------------- */
 /*
 :root {
   --text-main: #1a1a1a;
