@@ -1,0 +1,381 @@
+---
+title: "Research"
+---
+
+<div class="section-nav">
+  <a href="#publications">Publications</a>
+  <a href="#working-papers">Working Papers</a>
+  <a href="#work-in-progress">Work in Progress</a>
+</div>
+
+## Publications {#publications}
+
+<!--- invalid proxies and vola changes--->
+::: {.paper}
+**Invalid Proxies and Volatility Changes**
+
+with G. Angelini and L. Fanelli
+
+*Journal of Business & Economic Statistics* (2025)
+
+<!--- [Journal](https://www.tandfonline.com/doi/full/10.1080/07350015.2025.2602857) | [arXiv](https://arxiv.org/abs/2403.08753) | [Online Appendix](https://github.com/lcnnri/proxy_svar_stability_restrictions/blob/main/Supplement-AFN.pdf) | [GitHub](https://github.com/lcnnri/proxy_svar_stability_restrictions) | <a href="#" onclick="toggleAbstract('abstract_invalidproxies'); return false;">Abstract</a> | <a href="#" onclick="toggleBibtex('bibtex_invalidproxies'); return false;">BibTeX</a>
+--->
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://www.tandfonline.com/doi/full/10.1080/07350015.2025.2602857" target="_blank" rel="noopener">
+    <i class="bi bi-journal-text"></i><span>Journal</span>
+  </a>
+  <a class="pub-pill" href="https://arxiv.org/abs/2403.08753" target="_blank" rel="noopener">
+  <i class="bi bi-journal-text"></i><span>arXiv</span>
+  </a>
+  <a class="pub-pill" href="https://github.com/lcnnri/proxy_svar_stability_restrictions/blob/main/Supplement-AFN.pdf" target="_blank" rel="noopener">
+    <i class="bi bi-file-pdf"></i><span>Online Appendix</span>
+  </a>
+  <a class="pub-pill" href="https://github.com/lcnnri/proxy_svar_stability_restrictions" target="_blank" rel="noopener">
+    <i class="bi bi-github"></i><span>Code</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_invalidproxies')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_invalidproxies')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+
+::: {#abstract_invalidproxies .abstract style="display:none;"}
+When in proxy-SVARs the covariance matrix of VAR disturbances is subject to exogenous, permanent breaks that cause IRFs to change across volatility regimes, even strong, exogenous external instruments yield inconsistent estimates of the dynamic causal effects. However, if these volatility shifts are properly incorporated into the analysis through (testable) "stability restrictions", we demonstrate that the target IRFs are point-identified and can be estimated consistently under a necessary and sufficient rank condition. If the shifts in volatility are sufficiently informative, standard asymptotic inference remains valid even with (i) local-to-zero covariance between the proxies and the instrumented structural shocks, and (ii) potential failures of instrument exogeneity. Intuitively, shifts in volatility act similarly to strong instruments that are correlated with both the target and non-target shocks. We illustrate the effectiveness of our approach by revisiting a seminal fiscal proxy-SVAR for the US economy. We detect a sharp change in the size of the tax multiplier when the narrative tax instrument is complemented with the decline in unconditional volatility observed during the transition from the Great Inflation to the Great Moderation. The narrative tax instrument contributes to identify the tax shock in both regimes, although our empirical analysis raises concerns about its "statistical" validity.
+:::
+
+::: {#bibtex_invalidproxies .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_invalidproxies')">Copy</button>
+
+    @article{angelini2025invalid,
+      title={Invalid proxies and volatility changes},
+      author={Angelini, Giovanni and Fanelli, Luca and Neri, Luca},
+      journal={Journal of Business \& Economic Statistics},
+      volume={0},
+      number={ja},
+      pages={1--24},
+      year={2025},
+      publisher={Taylor \& Francis},
+      doi={10.1080/07350015.2025.2602857}
+    }
+
+:::
+:::
+
+<!--- ct dsge--->
+::: {.paper}
+**Estimation of Continuous-Time Linear DSGE Models from Discrete-Time Measurements**
+
+with B.J. Christensen and J.C. Parra-Alvarez
+
+*Journal of Econometrics* (2024)
+
+<!---[Journal (open access)](https://www.sciencedirect.com/science/article/pii/S0304407624002161#mmc1) | [Online Appendix](https://ars.els-cdn.com/content/image/1-s2.0-S0304407624002161-mmc1.pdf) | [GitHub](https://github.com/lcnnri/ct_dsge/tree/main) | <a href="#" onclick="toggleAbstract('abstract2'); return false;">Abstract</a> | <a href="#" onclick="toggleBibtex('bibtex2'); return false;">BibTeX</a>
+--->
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://www.sciencedirect.com/science/article/pii/S0304407624002161#mmc1" target="_blank" rel="noopener">
+    <i class="bi bi-journal-text"></i><span>Journal (open access)</span>
+  </a>
+  <a class="pub-pill" href="https://ars.els-cdn.com/content/image/1-s2.0-S0304407624002161-mmc1.pdf" target="_blank" rel="noopener">
+    <i class="bi bi-file-pdf"></i><span>Online Appendix</span>
+  </a>
+  <a class="pub-pill" href="https://github.com/lcnnri/ct_dsge/tree/main" target="_blank" rel="noopener">
+    <i class="bi bi-github"></i><span>Code</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_ctdsge')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_ctdsge')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+
+::: {#abstract_ctdsge .abstract style="display:none;"}
+We provide a general state space framework for estimation of the parameters of continuous-time linear DSGE models from discrete-time data. Our approach relies on the exact discrete-time representation of the equilibrium dynamics, hence avoiding discretization errors. We construct the exact likelihood for data sampled either as stocks or flows, based on the Kalman filter, and provide necessary and sufficient conditions for local identification of the frequency-invariant structural parameters of the underlying continuous-time model. We recover the unobserved structural shocks at measurement times from the reduced-form residuals in the state space representation by exploiting the underlying causal links implied by the economic model. We illustrate our approach using an off-the-shelf real business cycle model. Extensive Monte Carlo experiments show that the finite sample properties of our estimator are superior to those of an estimator relying on a naive Euler–Maruyama discretization of the economic model. In an application to postwar U.S. macroeconomic data, we estimate the model using series sampled at mixed frequencies, and combinations of series sampled as stocks and flows, and we provide a historical decomposition of the effects of shocks on observables into those stemming from structural supply and demand shocks.
+:::
+
+::: {#bibtex_ctdsge .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_ctdsge')">Copy</button>
+
+    @article{christensen2024estimation,
+      title={Estimation of continuous-time linear DSGE models from discrete-time measurements},
+      author={Christensen, Bent Jesper and Neri, Luca and Parra-Alvarez, Juan Carlos},
+      journal={Journal of Econometrics},
+      volume={244},
+      number={2},
+      pages={105871},
+      year={2024},
+      doi={10.1016/j.jeconom.2024.105871}
+    }
+
+:::
+:::
+
+
+## Working Papers {#working-papers}
+
+<!--- proxy zoo--->
+::: {.paper}
+**Beyond Validity: SVAR Identification Through the Proxy Zoo**
+
+with J. Huang
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://arxiv.org/abs/2601.11195" target="_blank" rel="noopener">
+    <i class="bi bi-journal-text"></i><span>arXiv</span>
+  </a>
+  <a class="pub-pill" href="https://jiaminghuang.net/research/zoo" target="_blank" rel="noopener">
+    <i class="bi bi-box-arrow-up-right"></i><span>Highlight</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_proxyzoo')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_proxyzoo')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+::: {#abstract_proxyzoo .abstract style="display:none;"}
+This paper develops a framework for robust identification in SVARs when researchers face a zoo of proxy variables. Instead of imposing exact exogeneity, we introduce generalized ranking restrictions (GRR) that bound the relative correlation of each proxy with the target and non-target shocks through a continuous proxy-quality parameter. Combining GRR with standard sign and narrative restrictions, we characterize identified sets for structural impulse responses and show how to partially identify the proxy-quality parameter using the joint information contained in the proxy zoo. We further develop sensitivity and diagnostic tools that allow researchers to assess transparently how empirical conclusions depend on proxy exogeneity assumptions and the composition of the proxy zoo. A simulation study shows that proxies constructed from sign restrictions can induce biased proxy-SVAR estimates, while our approach delivers informative and robust identified sets. An application to U.S. monetary policy illustrates the empirical relevance and computational tractability of the framework.
+:::
+
+::: {#bibtex_proxyzoo .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_rpoxyzoo')">Copy</button>
+
+    @misc{proxyzoo2026,
+      title={Beyond Validity: SVAR Identification Through the Proxy Zoo},
+      author={Jiaming Huang and Luca Neri},
+      eprint={2601.11195},
+      archivePrefix={arXiv},
+      year={2026},
+      url={https://arxiv.org/abs/2601.11195},
+    }
+
+:::
+:::
+
+<!--- unconvering attention het--->
+::: {.paper}
+**Uncovering Attention Heterogeneity**
+
+with J. Boccanfuso
+
+*Revision Requested at the Journal of Monetary Economics*
+
+
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5327369" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-text"></i><span>SSRN</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_atthet')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_atthet')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+::: {#abstract_atthet .abstract style="display:none;"}
+Heterogeneity in individuals’ attention to news shapes how aggregate shocks propagate through the economy. We propose a novel method to uncover the full distribution of attention in surveys of consumers and professional forecasters, by developing a finite mixture model to cluster forecasts according to their level of attention. Our results reveal substantial heterogeneity in attention, which, when ignored, leads to an overestimation of average attention. Leveraging our clustering, we construct decade-long panel datasets on attention and provide new insights into its drivers. We document an asymmetric effect of aggregate shocks on the distribution of attention and assess how attention varies with socioeconomic characteristics. Finally, we identify systematic deviations from Bayesian updating and related theories designed to account for behavioral biases. In particular, we find that individuals’ attention is less sensitive to changes in uncertainty and signal precision than predicted by these theories. Overall, this paper opens new avenues by providing the first panel datasets on attention and illustrating how they can inform theories of imperfect information through within-individual variations.
+:::
+
+::: {#bibtex_atthet .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_atthet')">Copy</button>
+
+    @article{atthet2025,
+      title={Uncovering Attention Heterogeneity},
+      author={J{\'e}r{\'e}my Boccanfuso and Luca Neri},
+      year={2025},
+    }
+
+::: 
+:::
+
+<!--- rounded forecasts--->
+::: {.paper}
+**Measuring Attention when Forecasts are Rounded**
+
+with J. Boccanfuso
+
+*Submitted*
+
+
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5552644" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-text"></i><span>SSRN</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_roundfcast')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_roundfcast')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+::: {#abstract_roundfcast .abstract style="display:none;"}
+Rounding in survey data obscures the identification of key parameters. We show that this issue is both conceptually and empirically important for estimating two measures of attention: the fraction of individuals who adjust their forecasts and the weight they place on news when doing so. We propose a simple fix-treating forecast revisions as interval data-which restores point identification. Our results reveal that many zero revisions arise from rounding rather than non-adjustment, and that even when individuals adjust, they remain largely inattentive.
+:::
+
+::: {#bibtex_roundfcast .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_roundfcast')">Copy</button>
+
+    @article{roundfcast2025,
+      title={Measuring Attention when Forecasts are Rounded},
+      author={J{\'e}r{\'e}my Boccanfuso and Luca Neri},
+      year={2025},
+    }
+
+::: 
+:::
+
+<!--- uncertainty and labor --->
+::: {.paper}
+**Firm Uncertainty and Labor Composition Dynamics**
+
+with E. Holst Partsch and Y. Petrova
+
+
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3911041" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-text"></i><span>SSRN</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_uncertainty')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_uncertainty')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+::: {#abstract_uncertainty .abstract style="display:none;"}
+We document the effects  of uncertainty shocks on firm-level employment of high- and low-skilled labor. To investigate the potential effects of uncertainty on employment growth, we use that different industries are differentially exposed to a number of aggregate shocks. We use this fact to identify industry-specific uncertainty shocks. We show that while  low-skilled labor growth is negatively affected by uncertainty shocks on impact, high-skill labor growth is not. Our dynamic approach shows that high-skill labor falls with a lag. Low-skilled labor shows similar dynamics, with the effect of uncertainty being strongest one year after impact.  Our results highlight that the labor misallocation effects ascribed to uncertainty shocks seem to affect low-skilled labor most and that there is persistence in the effects. We contextualize our empirical findings within a heterogeneous firm model with high- and low-skill labor inputs and heterogenous labor adjustment costs.
+:::
+
+::: {#bibtex_uncertainty .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_uncertainty')">Copy</button>
+
+    @article{uncertainty_labor_composition2021,
+      title={Firm Uncertainty and Labor Composition Dynamics},
+      author={Holst Partsch, Emil and Neri, Luca},
+      year={2022},
+    }
+::: 
+:::
+
+
+<!--- micro macro --->
+::: {.paper}
+**Structural Estimation Combining Micro and Macro Data**
+
+
+
+
+<div class="pub-links">
+  <a class="pub-pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3911041" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-text"></i><span>SSRN</span>
+  </a>
+  <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_micromacro')">
+    <i class="bi bi-card-text"></i><span>Abstract</span>
+  </button>
+  <button class="pub-pill" type="button" onclick="toggleBibtex('bibtex_micromacro')">
+    <i class="bi bi-quote"></i><span>BibTeX</span>
+  </button>
+</div>
+
+::: {#abstract_micromacro .abstract style="display:none;"}
+This paper introduces a novel approach for estimating heterogeneous-agent macroeconomic models adding information from micro data. The methodology covers both panels and repeated cross sections, with applications to a wide class of dynamic structural models used in macroeconomics. The routine involves the estimation of dynamic moments over subgroups of the cross-sectional dimension of agents. Micro moments differ from each other in the informative content that they carry for point estimation of the structural parameters. For instance, variability of moments over the cross-sectional distribution of households' wealth contain relevant information for the correct estimation of the subjective discount rate. However, data from the cross section are not relevant for the identification of a technology shock.
+:::
+
+::: {#bibtex_micromacro .bibtex style="display:none;"}
+<button class="copy-bibtex" onclick="copyBibtex('bibtex_micromacro')">Copy</button>
+
+    @article{micromacro2021,
+      title={Structural estimation combining micro and macro data},
+      author={Luca Neri},
+      year={2021},
+    }
+
+::: 
+:::
+
+
+
+
+
+
+
+## Work in Progress {#work-in-progress}
+
+::: {.paper}
+**Informativeness of Micro Data for Macro Models**
+:::
+
+```{=html}
+<script>
+function toggleAbstract(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleBibtex(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function copyBibtex(id) {
+  var bibtexElement = document.getElementById(id);
+  
+  // Get text content and remove the "Copy" button text
+  var bibtexText = bibtexElement.textContent.replace('Copy', '').trim();
+  
+  // Create a temporary textarea element
+  var textarea = document.createElement('textarea');
+  textarea.value = bibtexText;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  
+  // Select and copy
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // For mobile devices
+  
+  try {
+    var successful = document.execCommand('copy');
+    document.body.removeChild(textarea);
+    
+    if (successful) {
+      // Update button
+      var button = document.querySelector('#' + id + ' .copy-bibtex');
+      var originalText = button.innerText;
+      button.innerText = 'Copied!';
+      button.style.backgroundColor = '#28a745';
+      
+      setTimeout(function() {
+        button.innerText = originalText;
+        button.style.backgroundColor = '#6c757d';
+      }, 2000);
+    } else {
+      alert('Copy failed. Please copy manually.');
+    }
+  } catch (err) {
+    document.body.removeChild(textarea);
+    alert('Copy failed. Please copy manually.');
+  }
+}
+</script>

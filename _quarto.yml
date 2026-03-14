@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Luca Neri"
+  navbar:
+    search: false
+    left:  # Changed from 'right' to 'left' for main menu
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+  page-footer:
+    left:
+      - icon: github
+        href: https://github.com/lcnnri
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lcnnri/
+        aria-label: LinkedIn
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=dj4zuJYAAAAJ&hl=en&oi=sra
+        aria-label: Google Scholar
+      - icon: envelope
+        href: mailto:luca.neri@uclouvain.be
+        aria-label: Email
+    center: "© 2026. All rights reserved. "  # Fixed year from 2026 to 2025
+  favicon: favicon.ico  
+
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: false
+    page-layout: full
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+
+execute:
+  freeze: false
+
+preview:
+  port: 7274
+  browser: true

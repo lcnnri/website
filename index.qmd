@@ -1,0 +1,49 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+![](profile.jpg){fig-align="center" .profile-img}
+
+<div class="profile-icons" role="navigation" aria-label="Profile links">
+  <a href="https://github.com/lcnnri" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <a href="https://www.linkedin.com/in/lcnnri/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  <a href="https://scholar.google.com/citations?user=dj4zuJYAAAAJ&hl=en&oi=sra" aria-label="Google Scholar"><i class="bi bi-mortarboard"></i></a>
+  <a href="mailto:luca.neri@uclouvain.be" aria-label="Email"><i class="bi bi-envelope"></i></a>
+  <a href="cv.pdf" title="Download CV" aria-label="Download CV"><i class="bi bi-file-earmark-text"></i></a>
+</div>
+
+<div class="research-cta">
+<a href="research.qmd" class="pub-pill">Research Papers</a>
+</div>
+
+:::
+
+::: {.g-col-12 .g-col-md-8}
+
+## Welcome to my website!
+
+I am a **Marie Skłodowska-Curie Postdoctoral Fellow** at [CORE](https://uclouvain.be/en/research-institutes/lidam/core), [UCLouvain](https://uclouvain.be/en/index.html), working on the project *MacHete: Macroeconomic Aggregates and Heterogeneity*.
+
+You can read a short introduction to the project [here](https://www.uclouvain.be/en/news/machete).
+
+
+Previously, I was at [University of Bologna](https://www.unibo.it/en). I obtained my Ph.D. degree from [Aarhus University](https://www.au.dk/).
+
+My main research interests are **Econometrics**, **Macroeconomics**, and **Macro-Finance**.
+
+:::
+
+:::
+
+::: {.contact-section}
+**e-mail:** luca.neri(at)uclouvain.be
+
+CORE  
+Voie du Roman Pays 34, L1.03.01  
+1348 Louvain-la-Neuve  
+Belgium  
+:::
