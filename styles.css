@@ -25,7 +25,7 @@ To switch palette: uncomment one block below, comment the others.
 /* ---------------------------------------------------------
    PALETTE A — Classic Blue (default)
 --------------------------------------------------------- */
-
+/*
 :root {
   --text-main: #1a1a1a;
   --text-muted: #555;
@@ -55,13 +55,13 @@ To switch palette: uncomment one block below, comment the others.
   --transition: 0.25s;
 
 }
-
+*/
 
 /* ---------------------------------------------------------
    PALETTE B — Slate Gray
    Uncomment this block (and comment Palette A above) to activate.
 --------------------------------------------------------- */
-/*
+
 :root {
   --text-main: #1a1a1a;
   --text-muted: #666;
@@ -90,7 +90,7 @@ To switch palette: uncomment one block below, comment the others.
   --transition-fast: 0.15s;
   --transition: 0.25s;
 }
-*/
+
 
 /* ---------------------------------------------------------
    PALETTE C — Verde Petróleo
