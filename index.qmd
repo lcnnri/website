@@ -17,7 +17,7 @@ page-layout: full
 </div>
 
 <div class="research-cta">
-<a href="research.qmd" class="pub-pill">Research Papers</a>
+<a href="research.qmd" class="cta-button">Research Papers</a>
 </div>
 
 :::

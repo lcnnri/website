@@ -777,9 +777,30 @@ ICONS
 }
 
 .research-cta {
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--accent);
+  color: #fff !important;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.cta-button:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-1px);
+  color: #fff !important;
 }
 
 
