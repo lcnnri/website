@@ -203,7 +203,7 @@ Heterogeneity in individuals’ attention to news shapes how aggregate shocks pr
 
 with J. Boccanfuso
 
-*Submitted*
+*Revision Requested at the Economics Bulletin*
 
 
 
@@ -245,7 +245,7 @@ with E. Holst Partsch and Y. Petrova
 
 <div class="pub-links">
   <a class="pub-pill" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3911041" target="_blank" rel="noopener">
-    <i class="bi bi-file-earmark-text"></i><span>SSRN</span>
+    <i class="bi bi-file-earmark-text"></i><span>Paper</span>
   </a>
   <button class="pub-pill" type="button" onclick="toggleAbstract('abstract_uncertainty')">
     <i class="bi bi-card-text"></i><span>Abstract</span>
@@ -315,7 +315,7 @@ This paper introduces a novel approach for estimating heterogeneous-agent macroe
 ## Work in Progress {#work-in-progress}
 
 ::: {.paper}
-**Informativeness of Micro Data for Macro Models**
+**The Informativeness of Micro Moments for Macro Models**
 :::
 
 ```{=html}
